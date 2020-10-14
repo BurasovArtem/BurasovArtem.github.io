@@ -5,6 +5,31 @@
 		<title>Title</title>
 	</head>
 	<body>
+		<style type="text/css">
+			body {
+				width: 100vw;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			ul {
+				list-style-type: none;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			li {
+				background-color: blue;
+				margin: 10px;
+				padding: 20px;
+				border-radius: 5px;			}
+			li a {
+				text-decoration: none;
+				color: white;
+				cursor: pointer;
+			}
+		</style>
 		<script type="text/javascript">
 			window.onload = () => {
 				fetch("https://api.github.com/users/BurasovArtem/repos")
